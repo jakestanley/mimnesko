@@ -19,12 +19,12 @@ with open('database.json') as json_file:
     #     print('\tTags: ' + ', '.join(p['tags']))
 
 
-def get_tags():
-    _tags = set()
-    for d in data:
-        for t in d['tags']:
-            _tags.add(t)
-    return _tags
+    def get_tags():
+        _tags = set()
+        for d in data:
+            for t in d['tags']:
+                _tags.add(t)
+        return _tags
 
 
 class NeskoPrompt(Cmd):
